@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TP widget</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+      }
+      #frame {
+        border: none;
+        width: 100%;
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tp_form-root"></div>
+
+    <script type="text/javascript">
+      TPForm.render('#tp_form-root');
+
+      setTimeout(() => {
+        TPForm.set({ i18n: { title: 'Привет, это Навальный.' } }).update()
+      }, 5000)
+
+      setTimeout(() => {
+        TPForm.destroy()
+      }, 15000)
+    </script>
+  </body>
+</html>
