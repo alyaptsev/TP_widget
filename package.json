@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "dev": "webpack serve --config webpack.dev.js --open --hot",
+    "dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "Anton Lyaptsev <anton.lyaptsev@yandex.ru>",
