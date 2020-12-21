@@ -67,7 +67,7 @@ window.TPForm = {
     };
     iFrame.setAttribute('id', 'frame');
     iFrame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms');
-    const target = document.querySelector(root);
+    const target = document.querySelector(root) || document.body;
 
     target.append(iFrame);
   }
